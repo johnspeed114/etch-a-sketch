@@ -4,10 +4,23 @@
         <title>Etch-A-Sketch</title>
         <script src = "mypage.js" type = "text/javascript" defer></script>
         <link rel="stylesheet" href="styles.css">
-        <h2>Welcome to The Edgy Sketch</h2>
-        <button id= "clearButton">Clear and Restart</button>
+        
+        
     </head>
     <body>
+        <h2>Welcome to The Edgy Sketch</h2><br>
+        <button id = "clearButton" onclick = "clearButton()">Clear Sketch</button> 
+        <button id = "resizeButton" onclick = "openForm()">Restart and Resize</button>
+        <div class = "form-popup" id = "popupForm">
+            <h3>Please The Size of The New Sketch: </h3>
+            <form class = "form-container"><!--don't need the action_page.php since we aren't sent data to a file/server-->
+                 <label for = "boxsizes"><b>Enter Here</b></label>
+                 <input type="number" placeholder = "Number of Pixels" name =  "boxsizes" required>
+
+                 <button type = "submit" class = "btn" onclick = "resizeSketch()">Submit</button>
+                 <button type = "submit" class = "btncancel" onclick = "closeForm()">Close</button>
+            </form>
+        </div>
         <div id = "theGrid" class = "containerGrid"></div>
     </body>
 </html>

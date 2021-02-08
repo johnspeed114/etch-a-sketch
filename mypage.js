@@ -16,3 +16,11 @@ const gridBoxClass = document.getElementsByClassName("gridbox");
 for (let i = 1; i <= 256; i++) {
     gridBoxClass[i].addEventListener("mouseenter", function(){gridBoxClass[i].style.background = "yellow"});
 }
+
+function openForm() {
+    document.getElementById("popupForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("popupForm").style.display = "none";
+}
