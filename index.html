@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Etch-A-Sketch</title>
@@ -12,10 +12,10 @@
         <button id = "clearButton" onclick = "clearButton()">Clear Sketch</button> 
         <button id = "resizeButton" onclick = "openForm()">Restart and Resize</button>
         <div class = "form-popup" id = "popupForm">
-            <h3>Please The Size of The New Sketch: </h3>
+            <h3>Enter The Size of The New Sketch: </h3>
             <form class = "form-container"><!--don't need the action_page.php since we aren't sent data to a file/server-->
-                 <label for = "boxsizes"><b>Enter Here</b></label>
-                 <input type="number" placeholder = "Number of Pixels" name =  "boxsizes" required>
+                 <label for = "boxSizes"><b>Enter Here</b></label>
+                 <input type="number" placeholder = "Number of Pixels" id =  "boxSizes" required>
 
                  <button type = "submit" class = "btn" onclick = "resizeSketch()">Submit</button>
                  <button type = "submit" class = "btncancel" onclick = "closeForm()">Close</button>

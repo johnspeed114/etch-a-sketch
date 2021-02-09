@@ -1,6 +1,6 @@
-[]Should create clearButton function
-[]Should link clearButton function to the button
+[x]Should create clearButton function
+[x]Should link clearButton function to the button
 []Should create resizeSketch function
 []Should link resizeSketch function to the button
 [] Create image background of cage and have multiple repeated pictures
-[] Instead of changing the colors from blue to yellow, when hovering randomize the color each time. 
+[x] Instead of changing the colors from blue to yellow, when hovering randomize the color each time. 
