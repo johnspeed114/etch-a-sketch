@@ -16,10 +16,11 @@
             <form class = "form-container"><!--don't need the action_page.php since we aren't sent data to a file/server-->
                  <label for = "boxSizes"><b>Enter Here</b></label>
                  <input type="number" placeholder = "Number of Pixels" id =  "boxSizes" required>
-
-                 <button type = "submit" class = "btn" onclick = "resizeSketch()">Submit</button>
-                 <button type = "submit" class = "btncancel" onclick = "closeForm()">Close</button>
             </form>
+
+            <button type = "submit" class = "btn" onclick = "resizeSketch()">Submit</button>
+            <button type = "submit" class = "btncancel" onclick = "closeForm()">Close</button>
+            
         </div>
         <div id = "theGrid" class = "containerGrid"></div>
     </body>

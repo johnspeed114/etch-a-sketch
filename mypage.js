@@ -12,10 +12,15 @@ function createGridSize(gridSize) {
     }
 }
 createGridSize(gridSize);
- 
+
 function addListenerGrid() {
     for (let i = 0; i <= gridBoxClass.length; i++) {
-        gridBoxClass[i].addEventListener("mouseenter", function () { gridBoxClass[i].style.background = "yellow"});
+        gridBoxClass[i].addEventListener("mouseenter", function () { 
+            let r = Math.floor(Math.random()*255);
+            let g = Math.floor(Math.random()*255);
+            let b = Math.floor(Math.random()*255);
+
+            gridBoxClass[i].style.background = 'rgb('+r+', '+g+','+b+')'});
     }
 }
 addListenerGrid();
@@ -42,7 +47,6 @@ function resizeSketch() {
         var gridSize = newNum * newNum;
         resetGridSize(gridSize);
         addListenerGrid();
-
     }
 }
 
@@ -63,7 +67,7 @@ function resetGridSize(number) {
 
 function clearButton() {
     for (let n = 0; n <= gridBoxClass.length; n++) {
-        gridBoxClass[n].style.backgroundColor = 'rgb(' + 176 + ', ' + 198 + ', ' + 247 + ')';
+        gridBoxClass[n].style.backgroundColor = 'rgb(' + 242 + ', ' + 244 + ', ' + 250 + ')';
     }
 }
 
